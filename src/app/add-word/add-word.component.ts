@@ -7,24 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AddWordComponent {
   myButtonClick() {
+    this.words.push(this.userWord);
     this.userWord = '';
-}
+  }
+
+  showSentinceClick() {
+    this.userWord = this.words.join(' ');
+  }
 
   public userWord: string = '';
+  public words: string[] = [];
 
   ngOnInit(): void {
     this.userWord = '';
 }
 
   constructor() { }
-
-  public addWord(): void  {
-
-
-
-  }
-
-
 
 
 }
