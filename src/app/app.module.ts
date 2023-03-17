@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { CompyComponent } from './compy/compy.component';
 import { SuccesComponent } from './succes/succes.component';
 import { WarningComponent } from './warning/warning.component';
+import { AddWordComponent } from './add-word/add-word.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompyComponent,
     SuccesComponent,
-    WarningComponent
+    WarningComponent,
+    AddWordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
