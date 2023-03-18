@@ -8,6 +8,7 @@ import { SuccesComponent } from './succes/succes.component';
 import { WarningComponent } from './warning/warning.component';
 import { AddWordComponent } from './add-word/add-word.component';
 import { FormsModule } from '@angular/forms';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     CompyComponent,
     SuccesComponent,
     WarningComponent,
-    AddWordComponent
+    AddWordComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
