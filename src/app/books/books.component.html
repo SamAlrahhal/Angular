@@ -18,12 +18,8 @@
 </ul>
 
 <div class="visual">
-  <img [src]="book.img" alt="Book Cover" class="bookCover">
-  <label for="image">Image:</label>
-  <input type="text" id="image" name="image" [(ngModel)]="book.img">
+  <img src={{book.img}} alt="Book Cover" class="bookCover">
   <h2>{{book.title}}</h2>
   <p>Written by {{book.author}}</p>
   <p id="genreColor" class="genreColor"[style.background-color]="book.genre == 'nuts' ? 'red':''" >{{book.genre}}</p>
-
-
 </div>
